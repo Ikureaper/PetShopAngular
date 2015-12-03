@@ -1,0 +1,18 @@
+﻿<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Weight</th>
+        <th>Picture</th>
+    </tr>
+
+    <tr ng-repeat="pet in lc.pets" ng-click="lc.showDetails(pet.id)">
+        <td>{{pet.id}}</td>
+        <td>{{pet.name}}</td>
+        <td>{{pet.species}}</td>
+        <td>{{pet.weight}}</td>
+        <td><img ng-src="{{pet.imageUrl}}" /></td>
+    </tr>
+    
+</table>
